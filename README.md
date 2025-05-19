@@ -1,6 +1,6 @@
 ### Fetch PHP
 ```bash
-composer require jerome/fetch-php
+composer require jerome/fetch-php psr/log
 ```
 
 ### Example 
