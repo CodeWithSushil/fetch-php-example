@@ -1,6 +1,0 @@
-{
-    "require": {
-        "jerome/fetch-php": "^3.2",
-        "psr/log": "^3.0"
-    }
-}
