@@ -1,0 +1,5 @@
+{
+    "require": {
+        "fetchphp/fetch": "^1.0"
+    }
+}
