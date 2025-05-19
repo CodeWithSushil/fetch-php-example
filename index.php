@@ -1,13 +1,16 @@
 <?php
-use GuzzleHttp\Client;
-use Fetch\Http\ClientHandler;
 use Fetch\Interfaces\Response as ResponseInterface;
 
 require_once "vendor/autoload.php";
 
-$response = fetch('https://example.com');
+// Simple GET request
+$response = fetch('https://api.example.com/users');
+$users = $response->json();
 
-if ($response->ok()) {
- echo $response->text();
-   // echo "FetchPHP is working correctly!";
-}
+// POST request with JSON body
+$response = fetch('https://api.example.com/users', [
+    'method' => 'POST',
+    'json' => ['name' => 'John Doe', 'email' => 'john@example.com'],
+]);
+
+echo $response->json();
