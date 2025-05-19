@@ -13,4 +13,4 @@ $response = fetch('https://api.example.com/users', [
     'json' => ['name' => 'John Doe', 'email' => 'john@example.com'],
 ]);
 
-echo $response->json();
+echo $response->text();
