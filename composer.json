@@ -1,5 +1,5 @@
 {
     "require": {
-        "fetchphp/fetch": "^1.0"
+        "jerome/fetch-php": "^3.2"
     }
 }
